@@ -98,33 +98,34 @@ const Reservations = () => {
               </div>
             </div>
 
-            {/* Date & Time */}
-            <div className="flex flex-col md:flex-row md:gap-4">
-              {/* Date */}
-              <div className="flex-1 space-y-2">
-                <label className="text-sm tracking-wider text-white/60">Preferred Date</label>
-                <div className="relative">
-                  <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/30" />
-                  <input
-                    type="date"
-                    required
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-white cursor-pointer focus:bg-white/10 focus:border-white/30 focus:outline-none transition-all duration-300"
-                  />
-                </div>
-              </div>
-              {/* Time */}
-              <div className="flex-1 space-y-2 mt-4 md:mt-0">
-                <label className="text-sm tracking-wider text-white/60">Preferred Time</label>
-                <div className="relative">
-                  <Clock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/30" />
-                  <input
-                    type="time"
-                    required
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-white cursor-pointer focus:bg-white/10 focus:border-white/30 focus:outline-none transition-all duration-300"
-                  />
-                </div>
-              </div>
-            </div>
+ {/* Date & Time */}
+<div className="flex flex-col gap-4 md:flex-row md:gap-4">
+  {/* Date */}
+  <div className="flex-1 space-y-2">
+    <label className="text-sm tracking-wider text-white/60">Preferred Date</label>
+    <div className="relative">
+      <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/30" />
+      <input
+        type="date"
+        required
+        className="w-full md:w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-white cursor-pointer focus:bg-white/10 focus:border-white/30 focus:outline-none transition-all duration-300"
+      />
+    </div>
+  </div>
+
+  {/* Time */}
+  <div className="flex-1 space-y-2">
+    <label className="text-sm tracking-wider text-white/60">Preferred Time</label>
+    <div className="relative">
+      <Clock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/30" />
+      <input
+        type="time"
+        required
+        className="w-full md:w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-white cursor-pointer focus:bg-white/10 focus:border-white/30 focus:outline-none transition-all duration-300"
+      />
+    </div>
+  </div>
+</div>
 
             {/* Special Requests */}
             <div className="space-y-2">
